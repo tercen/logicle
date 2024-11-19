@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>hello-wasm example</title>
+</head>
+<body>
+<script type="module">
+    import init, { LogicleW } from "./pkg/logicle_wasm.js";
+    init().then(() => {
+        let logicle = LogicleW.create(-1000.0, 1.0, 4.0, 0.0, 4096);
+        let scale = logicle.scale(-10.0)
+        alert(scale)
+    });
+</script>
+</body>
+</html>
