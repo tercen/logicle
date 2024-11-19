@@ -3,9 +3,5 @@ name = "logicle"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
 average =  { version = "0.15.1", features = ["std"] }
-#serde = { version = "1.0.210", features = ["derive"] }
-#metrics-util = { version = "0.18.0", features = ["std"] }
